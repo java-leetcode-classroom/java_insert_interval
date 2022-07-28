@@ -16,7 +16,7 @@ public class Solution {
         }
         buffer.add(interval);
       } else { // find overlap start and end
-        if (overlapStart <= interval[1] && overlapStart >= interval[0]) {
+        if (overlapStart >= interval[0]) {
           overlapStart = interval[0];
         }
         if (overlapEnd <= interval[1] && overlapEnd >= interval[0]) {
